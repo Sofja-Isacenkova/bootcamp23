@@ -3,6 +3,10 @@
 
 name: .NET
 
+default:
+run:
+working-directory: src
+
 on:
   push:
     branches: [ "main" ]
