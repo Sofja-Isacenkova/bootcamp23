@@ -73,7 +73,13 @@
         },
         "dependsOn": [
           "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanPortalName'))]"
-        ]
+        ],
+        "outputs": {
+            "webappname": {
+                "type": "string",
+                "value": "[parameters('webAppName')]"
+            }
+        }
       }
     ]
   }
