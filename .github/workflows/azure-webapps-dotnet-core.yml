@@ -86,7 +86,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - uses: azure/arm-deploy@v1
         with:
-          resourceGroupName: bootcamp-recources
+          resourceGroupName: bootcamp-resources
           template: .src/infastructure/webapp.json
 
       - name: Deploy to Azure Web App
