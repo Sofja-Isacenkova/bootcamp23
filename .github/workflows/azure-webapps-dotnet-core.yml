@@ -81,7 +81,6 @@ jobs:
         with:
           name: .net-app
 
-      - uses: actions/checkout@master
       - uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
