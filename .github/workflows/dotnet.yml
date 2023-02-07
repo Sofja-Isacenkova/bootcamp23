@@ -20,6 +20,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Azure WebApp
+      uses: Azure/webapps-deploy@v2.2.5
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
