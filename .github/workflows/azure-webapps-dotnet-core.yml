@@ -87,7 +87,7 @@ jobs:
       - uses: azure/arm-deploy@v1
         with:
           resourceGroupName: bootcamp-resources
-          template: src/infastructure/webapp.json
+          template: ./infastructure/webapp.json
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
